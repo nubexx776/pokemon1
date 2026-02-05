@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212529;
+    font-family: 'Arial', sans-serif;
+}
+
+.video-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.top-video {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.controls{
+    width: 95%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.controls input, .controls select{
+    flex: 1;
+    min-width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.btn{
+    flex: 0.5;
+    background-color: #198754;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover { background-color: #157347; }
+
+.kartochki{
+    width: 95%;
+    max-width: 1440px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card{
+    position: relative;
+    width: 280px;
+    background-color: #FFFF00;
+    border: 3px solid #000;
+    border-radius: 15px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); }
+
+.star {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+}
+
+.id-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF0000;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    font-size: 18px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.type-pill {
+    background: #E0F2F1;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 3px 0;
+    font-weight: 500;
+}
+
+.weaknesses {
+    color: #4A148C;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px !important;
+}
+
+.time-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00E5FF;
+    color: #000;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+}

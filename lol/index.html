@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="video-header">
+        <video autoplay muted loop playsinline class="top-video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="">
+        </video>
+    </div>
+
+    <div class="controls">
+        <input type="search" placeholder="search your pokemon" class="inpuSearch">
+        
+        <select id="typeFilter">
+            <option value="all">all</option>
+        </select>
+
+        <input type="number" placeholder="from weight" id="fromWeight">
+        <input type="number" placeholder="to weight" id="toWeight">
+
+        <select class="sortSelect">
+            <option value="ABC">A-Z</option>
+            <option value="CBA">Z-A</option>
+            <option value="BIG">Biggest weight</option>
+            <option value="SMALL">Smallest weight</option>
+        </select>
+
+        <button class="btn">Search</button>
+    </div>
+
+    <div class="kartochki"></div>
+
+    <script src="./pokemons.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
